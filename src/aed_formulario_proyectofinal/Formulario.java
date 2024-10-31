@@ -2,8 +2,6 @@
 package aed_formulario_proyectofinal;
 
 public class Formulario {
-<<<<<<< HEAD
-    public static void main (String[] args){
         /**
          * 
          */
