@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Formulario {
         /**
-         * 
+         * Prueba básica del funcionamiento del main en Git
+         * @resultado exitoso
          */
     public static void main (String[] args){
         Scanner scan=new Scanner(System.in);
