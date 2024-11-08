@@ -205,7 +205,7 @@ Distribuido bajo la Licencia MIT. Consulta `LICENSE.txt` para más información.
 <!-- CONTACTO -->
 ## Contacto
 
-Christian Reyes Coello [@your_twitter](https://twitter.com/your_username) - rchristianofficial@gmail.com
+Christian Reyes Coello - rchristianofficial@gmail.com
 
 Enlace del Proyecto: [https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.git](https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.git)
 
