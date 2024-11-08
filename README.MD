@@ -19,12 +19,12 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contribuidores][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Estrellas][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Licencia MIT][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contribuidores][contributors-shield][contributors-url]]
+[![Forks][forks-shield][forks-url]]
+[![Estrellas][stars-shield][stars-url]]
+[![Issues][issues-shield][issues-url]]
+[![Licencia MIT][license-shield][license-url]]
+[![LinkedIn][linkedin-shield][linkedin-url]]
 
 
 
@@ -85,7 +85,7 @@
 <!-- SOBRE EL PROYECTO -->
 ## Sobre el Proyecto
 
-[![Captura de Pantalla][screenshot]](https://example.com)
+[![Captura de Pantalla][product-screenshot](https://example.com/)]
 
 Aquí tienes una plantilla en blanco para comenzar: Para evitar reescribir demasiada información, utiliza la función de búsqueda y reemplazo en tu editor de texto para los siguientes términos: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `titulo_del_proyecto`, `descripcion_del_proyecto`.
 
@@ -95,7 +95,7 @@ Aquí tienes una plantilla en blanco para comenzar: Para evitar reescribir demas
 
 
 ### Tecnologías Utilizadas
-* [![Java][Java-shield]][Java-url]
+* [![Java][Java-shield][Java-url]]
 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
