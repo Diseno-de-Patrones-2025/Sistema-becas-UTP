@@ -95,7 +95,7 @@ Aquí tienes una plantilla en blanco para comenzar: Para evitar reescribir demas
 
 
 ### Tecnologías Utilizadas
-* [![Java][Java]][Java-url]
+* [![Java][Java-shield]][Java-url]
 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
@@ -186,7 +186,7 @@ Si tienes una sugerencia para mejorar esto, por favor haz un fork del repositori
 ### Principales Contribuidores:
 
 <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="Imagen de contribuciones" />
+  <img src="https://contrib.rocks/image?repo=Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP" alt="Imagen de contribuciones" />
 </a>
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
@@ -240,6 +240,6 @@ Enlace del Proyecto: [https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Es
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-reyes-coello-698158252/
 [product-screenshot]: images/screenshot.png
-[Java]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
+[Java-shield]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
 [Java-url]: https://www.java.com/es/
 
