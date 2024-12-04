@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"misClases","l":"Consumidor"},{"p":"aed_formulario_proyectofinal","l":"Formulario"},{"p":"misClases","l":"Interacción"},{"p":"misClases","l":"Listas"},{"p":"misClases","l":"Nodo"},{"p":"misClases","l":"Productor"}];updateSearchResults();
