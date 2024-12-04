@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo utp.png" alt="Logo" width="205" height="63">
   </a>
 
 <h3 align="center">titulo_del_proyecto</h3>
