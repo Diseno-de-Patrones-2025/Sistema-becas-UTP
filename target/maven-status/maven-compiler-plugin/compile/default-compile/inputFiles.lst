@@ -1,0 +1,17 @@
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/controlador/GestorDocumentos.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/controlador/GestorPostulantes.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/controlador/GestorSolicitudes.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/controlador/GestorVisitas.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/controlador/SistemaBecas.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/main/Main.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/ABB.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/ColaCircular.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/Documentacion.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/ListaCircularVisitas.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/Postulante.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/Solicitud.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/modelo/Visita.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/vista/ConsultarEstadoSolicitudUI.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/vista/RegistroDocumentosUI.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/vista/RegistroPostulantesUI.java
+/workspaces/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/src/main/java/vista/RegistroSolicitudUI.java
