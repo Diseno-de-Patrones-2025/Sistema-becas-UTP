@@ -1,0 +1,45 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'19'
+-sourcepath
+'E:/1/Programación/Java/Algoritmos y Estructuras de Datos/SistemaBecas/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/1/Programación/Java/Algoritmos y Estructuras de Datos/SistemaBecas/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'SistemaBecas 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'SistemaBecas 1.0-SNAPSHOT API'
+controlador
+main
+modelo
+vista
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\src\main\java = 1733110362000
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\allclasses-index.html = 1733282663112
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\allpackages-index.html = 1733282663121
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\element-list = 1733282662486
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\help-doc.html = 1733282663308
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\index-all.html = 1733282663252
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\index.html = 1733282663040
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\member-search-index.js = 1733282663140
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\module-search-index.js = 1733282663128
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\overview-summary.html = 1733282663276
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\overview-tree.html = 1733282663022
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\package-search-index.js = 1733282663132
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\search.html = 1733282663266
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\tag-search-index.js = 1733282663143
+E:\1\Programación\Java\Algoritmos y Estructuras de Datos\SistemaBecas\target\reports\apidocs\type-search-index.js = 1733282663136
