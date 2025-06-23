@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo utp.png" alt="Logo" width="205" height="63">
   </a>
 
 <h3 align="center">titulo_del_proyecto</h3>
@@ -85,7 +85,7 @@
 <!-- SOBRE EL PROYECTO -->
 ## Sobre el Proyecto
 
-[![Captura de Pantalla][product-screenshot]](https://example.com)
+[![Captura Javadoc][javadoc-screenshot]]
 
 Aquí tienes una plantilla en blanco para comenzar: Para evitar reescribir demasiada información, utiliza la función de búsqueda y reemplazo en tu editor de texto para los siguientes términos: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `titulo_del_proyecto`, `descripcion_del_proyecto`.
 
@@ -239,7 +239,7 @@ Enlace del Proyecto: [https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Es
 [license-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-reyes-coello-698158252/
-[product-screenshot]: images/screenshot.png
+[javadoc-screenshot]: images/Screenshot_568.png
 [Java-shield]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
 [Java-url]: https://www.java.com/es/
 

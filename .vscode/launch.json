@@ -5,7 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         
-
         {
             "type": "java",
             "name": "Current File",
@@ -14,10 +13,10 @@
         },
         {
             "type": "java",
-            "name": "Formulario",
+            "name": "Main",
             "request": "launch",
-            "mainClass": "aed_formulario_proyectofinal.Formulario",
-            "projectName": "Formulario-Algoritmos-y-Estructuras-de-Datos-UTP_493c038"
+            "mainClass": "main.Main",
+            "projectName": "SistemaBecas"
         }
     ]
 }
