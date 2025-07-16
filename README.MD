@@ -239,7 +239,7 @@ Enlace del Proyecto: [https://github.com/Diseno-de-Patrones-2025/Sistema-becas-U
 [license-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-reyes-coello-698158252/
-[javadoc-screenshot]: images/Screenshot_568.png
+[javadoc-screenshot]: images/Pattern_index.png
 [Java-shield]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
 [Java-url]: https://www.java.com/es/
 
