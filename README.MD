@@ -87,7 +87,7 @@
 
 [![Captura Javadoc][javadoc-screenshot]]
 
-Aquí tienes una plantilla en blanco para comenzar: Para evitar reescribir demasiada información, utiliza la función de búsqueda y reemplazo en tu editor de texto para los siguientes términos: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `titulo_del_proyecto`, `descripcion_del_proyecto`.
+
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
