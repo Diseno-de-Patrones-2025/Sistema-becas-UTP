@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"Adapter"},{"l":"All Packages","u":"allpackages-index.html"},{"l":"controlador"},{"l":"Factory"},{"l":"main"},{"l":"modelo"},{"l":"Observer"},{"l":"vista"}];updateSearchResults();
