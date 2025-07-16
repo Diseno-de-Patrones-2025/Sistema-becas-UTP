@@ -107,7 +107,6 @@ public class GeneradorReportes {
      */
     private void generarReporteObserverPattern() {
         System.out.println("\n--- REPORTE DEL OBSERVER PATTERN ---");
-        System.out.println("(Inspirado en el sistema de Mathias)\n");
         
         System.out.println("✓ OBSERVER PATTERN IMPLEMENTADO:");
         System.out.println("  • ObservableSolicitud - Solicitudes observables");
