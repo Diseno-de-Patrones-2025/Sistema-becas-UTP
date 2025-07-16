@@ -31,7 +31,7 @@
 <!-- LOGO DEL PROYECTO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP">
+  <a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP">
     <img src="images/logo utp.png" alt="Logo" width="205" height="63">
   </a>
 
@@ -40,14 +40,14 @@
   <p align="center">
     descripcion_del_proyecto
     <br />
-    <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP"><strong>Explora la documentación »</strong></a>
+    <a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP"><strong>Explora la documentación »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP">Ver Demo</a>
+    <a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP">Ver Demo</a>
     ·
-    <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/issues/new?labels=bug&template=bug-report---.md">Reportar Error</a>
+    <a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/issues/new?labels=bug&template=bug-report---.md">Reportar Error</a>
     ·
-    <a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/issues/new?labels=enhancement&template=feature-request---.md">Solicitar Funcionalidad</a>
+    <a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/issues/new?labels=enhancement&template=feature-request---.md">Solicitar Funcionalidad</a>
   </p>
 </div>
 
@@ -160,7 +160,7 @@ _Para más ejemplos, por favor consulta la [Documentación](https://example.com)
 - [ ] Característica 3
     - [ ] Característica Anidada
 
-Consulta los [issues abiertos](https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/issues) para ver una lista completa de las características propuestas (y problemas conocidos).
+Consulta los [issues abiertos](https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/issues) para ver una lista completa de las características propuestas (y problemas conocidos).
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
@@ -185,8 +185,8 @@ Si tienes una sugerencia para mejorar esto, por favor haz un fork del repositori
 
 ### Principales Contribuidores:
 
-<a href="https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP" alt="Imagen de contribuciones" />
+<a href="https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Diseno-de-Patrones-2025/Sistema-becas-UTP" alt="Imagen de contribuciones" />
 </a>
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
@@ -207,7 +207,7 @@ Distribuido bajo la Licencia MIT. Consulta `LICENSE.txt` para más información.
 
 Christian Reyes Coello - rchristianofficial@gmail.com
 
-Enlace del Proyecto: [https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.git](https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.git)
+Enlace del Proyecto: [https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP.git](https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP.git)
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
@@ -227,16 +227,16 @@ Enlace del Proyecto: [https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Es
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.svg?style=for-the-badge
-[contributors-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.svg?style=for-the-badge
-[forks-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/network/members
-[stars-shield]: https://img.shields.io/github/stars/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.svg?style=for-the-badge
-[stars-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.svg?style=for-the-badge
-[issues-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/issues
-[license-shield]: https://img.shields.io/github/license/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP.svg?style=for-the-badge
-[license-url]: https://github.com/Chris-rc0807/Formulario-Algoritmos-y-Estructuras-de-Datos-UTP/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Diseno-de-Patrones-2025/Sistema-becas-UTP.svg?style=for-the-badge
+[contributors-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Diseno-de-Patrones-2025/Sistema-becas-UTP.svg?style=for-the-badge
+[forks-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/network/members
+[stars-shield]: https://img.shields.io/github/stars/Diseno-de-Patrones-2025/Sistema-becas-UTP.svg?style=for-the-badge
+[stars-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Diseno-de-Patrones-2025/Sistema-becas-UTP.svg?style=for-the-badge
+[issues-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/issues
+[license-shield]: https://img.shields.io/github/license/Diseno-de-Patrones-2025/Sistema-becas-UTP.svg?style=for-the-badge
+[license-url]: https://github.com/Diseno-de-Patrones-2025/Sistema-becas-UTP/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/christian-reyes-coello-698158252/
 [javadoc-screenshot]: images/Screenshot_568.png

@@ -55,4 +55,30 @@ public class GestorPostulantes {
         System.out.println("Postulantes registrados (en orden alfabético):");
         arbolPostulantes.mostrarInOrden();
     }
+    
+    /**
+     * Obtiene el árbol binario de búsqueda que contiene los postulantes.
+     * Método agregado para soporte del GeneradorReportes y UnifiedSystemAdapter.
+     * 
+     * @return El ABB con todos los postulantes registrados
+     */
+    public ABB getAbb() {
+        return arbolPostulantes;
+    }
+    
+    /**
+     * Obtiene una lista de todos los postulantes registrados.
+     * Método agregado para facilitar el análisis y reportes.
+     * 
+     * @return Lista de postulantes ordenados alfabéticamente
+     */
+    public java.util.List<Postulante> obtenerTodosLosPostulantes() {
+        java.util.List<Postulante> lista = new java.util.ArrayList<>();
+        // Usar el adapter para obtener los postulantes ordenados
+        Adapter.ABBAdapter adapter = new Adapter.ABBAdapter(arbolPostulantes);
+        for (Postulante p : adapter) {
+            lista.add(p);
+        }
+        return lista;
+    }
 }

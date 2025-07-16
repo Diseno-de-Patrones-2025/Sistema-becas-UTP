@@ -125,4 +125,45 @@ public class GestorSolicitudes {
             System.out.println(solicitud.getPostulante().getNombre() + " - Estado: " + solicitud.getEstado());
         }
     }
+    
+    /**
+     * Obtiene la cola circular de solicitudes.
+     * Método agregado para soporte del GeneradorReportes y UnifiedSystemAdapter.
+     * 
+     * @return La cola circular que contiene todas las solicitudes
+     */
+    public ColaCircular getColaSolicitudes() {
+        return colaSolicitudes;
+    }
+    
+    /**
+     * Obtiene el historial de solicitudes procesadas.
+     * Método agregado para facilitar el análisis y reportes.
+     * 
+     * @return Lista del historial de solicitudes procesadas
+     */
+    public LinkedList<Solicitud> getHistorialSolicitudes() {
+        return historialSolicitudes;
+    }
+    
+    /**
+     * Obtiene una lista de todas las solicitudes (pendientes y procesadas).
+     * Método agregado para facilitar el análisis y reportes.
+     * 
+     * @return Lista completa de solicitudes del sistema
+     */
+    public java.util.List<Solicitud> obtenerTodasLasSolicitudes() {
+        java.util.List<Solicitud> lista = new java.util.ArrayList<>();
+        
+        // Agregar solicitudes pendientes de la cola
+        Adapter.ColaCircularAdapter adapter = new Adapter.ColaCircularAdapter(colaSolicitudes);
+        for (Solicitud s : adapter) {
+            lista.add(s);
+        }
+        
+        // Agregar solicitudes del historial
+        lista.addAll(historialSolicitudes);
+        
+        return lista;
+    }
 }

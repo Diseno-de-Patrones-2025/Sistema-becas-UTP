@@ -58,4 +58,40 @@ public class GestorVisitas {
     public void mostrarVisitas() {
         listaVisitas.mostrarVisitas();
     }
+    
+    /**
+     * Obtiene la lista circular de visitas.
+     * Método agregado para soporte del GeneradorReportes y UnifiedSystemAdapter.
+     * 
+     * @return La lista circular que contiene todas las visitas
+     */
+    public ListaCircularVisitas getListaVisitas() {
+        return listaVisitas;
+    }
+    
+    /**
+     * Obtiene una lista de todas las visitas registradas.
+     * Método agregado para facilitar el análisis y reportes.
+     * 
+     * @return Lista de todas las visitas del sistema
+     */
+    public java.util.List<Visita> obtenerTodasLasVisitas() {
+        java.util.List<Visita> lista = new java.util.ArrayList<>();
+        // Si ListaCircularVisitas tiene un método para iterar, lo usamos
+        // Por ahora, asumimos que tiene un método para obtener todas las visitas
+        try {
+            // Intentar usar reflexión para acceder a los datos si no hay método público
+            java.lang.reflect.Field field = ListaCircularVisitas.class.getDeclaredField("visitas");
+            field.setAccessible(true);
+            Object[] visitas = (Object[]) field.get(listaVisitas);
+            for (Object v : visitas) {
+                if (v != null && v instanceof Visita) {
+                    lista.add((Visita) v);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("No se pudo acceder a las visitas para el reporte");
+        }
+        return lista;
+    }
 }

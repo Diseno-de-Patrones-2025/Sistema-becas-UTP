@@ -57,7 +57,8 @@ public class SistemaBecas {
             System.out.println("10. Consultar Estado de Solicitudes");
             System.out.println("11. Mostrar Historial de Solicitudes");
             System.out.println("12. Mostrar Documentacion");
-            System.out.println("13. Salir");
+            System.out.println("13. Generar Reporte");
+            System.out.println("14. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = sc.nextInt();
             
@@ -108,8 +109,13 @@ public class SistemaBecas {
                     String nombre=sc.nextLine();
                     gestorDocumentaciones.mostrarDocumentos(nombre);
                 }
-                //Opción que finaliza el programa
+                //Opción que genera reportes del sistema con todas las mejoras implementadas
                 case 13 -> {
+                    GeneradorReportes generador = new GeneradorReportes(gestorPostulantes, gestorSolicitudes, gestorVisitas);
+                    generador.generarReporteCompleto();
+                }
+                //Opción que finaliza el programa
+                case 14 -> {
                     System.out.println("Gracias por usar el Sistema de Becas. ¡Hasta luego!");
                     sc.close(); //Cierra el Scanner al concluir el programa
                     return; //Retorna fuera del bucle, finalizando el programa
