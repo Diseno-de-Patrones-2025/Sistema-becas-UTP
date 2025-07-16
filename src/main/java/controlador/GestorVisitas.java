@@ -1,61 +1,58 @@
 package controlador;
 
 import modelo.ListaCircularVisitas;
-import modelo.Postulante;
 import modelo.Visita;
-
 import java.util.Scanner;
 
 /**
- * La clase GestorVisitas gestiona las visitas realizadas a los postulantes dentro del sistema de becas.
- * Permite registrar una visita para un postulante y mostrar todas las visitas registradas.
+ * Gestor para el manejo de visitas en el sistema.
  */
-
 public class GestorVisitas {
     private ListaCircularVisitas listaVisitas;
-
+    
     /**
-     * Constructor que inicializa el gestor de visitas con una lista circular de visitas
-     * con la capacidad especificada.
+     * Constructor que inicializa el gestor con una capacidad específica.
      * 
-     * @param capacidad La capacidad máxima de la lista circular de visitas.
+     * @param capacidad La capacidad máxima de visitas.
      */
-    
     public GestorVisitas(int capacidad) {
-        listaVisitas = new ListaCircularVisitas(capacidad);
+        this.listaVisitas = new ListaCircularVisitas(capacidad);
     }
-
-    /**
-     * Registra una nueva visita para un postulante. Se solicita al usuario el nombre del postulante,
-     * la fecha de la visita y las observaciones. Luego, genera un objeto Visita y lo inserta a la lista de visitas.
-     */
     
+    /**
+     * Registra una nueva visita.
+     */
     public void registrarVisita() {
         Scanner sc = new Scanner(System.in);
-        
-        //Solicita la información al usuario
-        System.out.print("Ingrese el nombre del postulante: ");
+        System.out.print("Ingrese el nombre del visitante: ");
         String nombre = sc.nextLine();
-        System.out.print("Ingrese la fecha de la visita: ");
-        String fecha = sc.nextLine();
-        System.out.print("Ingrese observaciones: ");
-        String observaciones = sc.nextLine();
+        System.out.print("Ingrese el motivo de la visita: ");
+        String motivo = sc.nextLine();
         
-        //Genera un objeto postulante y visita
-        Postulante postulante = new Postulante(nombre, "", "");
-        Visita visita = new Visita(postulante, fecha, observaciones);
+        Visita visita = new Visita(nombre, motivo);
         
-        //Inserta la visita a la lista circular
-        listaVisitas.agregarVisita(visita);
-
-        System.out.println("Visita registrada exitosamente.");
+        if (listaVisitas.agregar(visita)) {
+            System.out.println("Visita registrada exitosamente.");
+        } else {
+            System.out.println("No se pudo registrar la visita. Lista llena.");
+        }
     }
-
-    /**
-     * Muestra todas las visitas registradas en la lista circular de visitas.
-     */
     
+    /**
+     * Muestra todas las visitas registradas.
+     */
     public void mostrarVisitas() {
-        listaVisitas.mostrarVisitas();
+        if (listaVisitas.estaVacia()) {
+            System.out.println("No hay visitas registradas.");
+            return;
+        }
+        
+        System.out.println("Visitas registradas:");
+        Visita[] visitas = listaVisitas.obtenerVisitas();
+        for (int i = 0; i < visitas.length; i++) {
+            System.out.println((i + 1) + ". " + visitas[i].getNombreVisitante() + 
+                             " - " + visitas[i].getMotivo() + 
+                             " - " + visitas[i].getFecha());
+        }
     }
 }

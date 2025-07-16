@@ -1,37 +1,80 @@
 package modelo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * Representa una cola circular que gestiona solicitudes en el sistema de becas.
- * La cola tiene una capacidad fija y permite encolar, desencolar, y consultar las solicitudes.
+ * Implementación de una cola circular para gestionar solicitudes.
+ * Utiliza un array circular con capacidad fija.
  */
-
 public class ColaCircular {
-    private Solicitud[] cola;
-    private int frente, finalCola, capacidad, tamaño;
+    private Solicitud[] solicitudes;
+    private int frente;
+    private int trasero;
+    private int tamaño;
+    private int capacidad;
     
     /**
-     * Constructor que inicializa la cola con la capacidad especificada.
+     * Constructor que inicializa la cola con una capacidad específica.
      * 
      * @param capacidad La capacidad máxima de la cola.
      */
-    
     public ColaCircular(int capacidad) {
         this.capacidad = capacidad;
-        cola = new Solicitud[capacidad];
-        frente = 0;
-        finalCola = -1;
-        tamaño = 0;
+        this.solicitudes = new Solicitud[capacidad];
+        this.frente = 0;
+        this.trasero = -1;
+        this.tamaño = 0;
     }
-
+    
+    /**
+     * Agrega una solicitud al final de la cola.
+     * 
+     * @param solicitud La solicitud a agregar.
+     * @return true si se agregó exitosamente, false si la cola está llena.
+     */
+    public boolean encolar(Solicitud solicitud) {
+        if (estaLlena()) {
+            return false;
+        }
+        
+        trasero = (trasero + 1) % capacidad;
+        solicitudes[trasero] = solicitud;
+        tamaño++;
+        return true;
+    }
+    
+    /**
+     * Remueve y retorna la solicitud al frente de la cola.
+     * 
+     * @return La solicitud removida o null si la cola está vacía.
+     */
+    public Solicitud desencolar() {
+        if (estaVacia()) {
+            return null;
+        }
+        
+        Solicitud solicitud = solicitudes[frente];
+        solicitudes[frente] = null;
+        frente = (frente + 1) % capacidad;
+        tamaño--;
+        return solicitud;
+    }
+    
+    /**
+     * Retorna la solicitud al frente de la cola sin removerla.
+     * 
+     * @return La solicitud al frente o null si la cola está vacía.
+     */
+    public Solicitud frente() {
+        if (estaVacia()) {
+            return null;
+        }
+        return solicitudes[frente];
+    }
+    
     /**
      * Verifica si la cola está vacía.
      * 
-     * @return true si la cola está vacía, false si está llena.
+     * @return true si la cola está vacía, false en caso contrario.
      */
-    
     public boolean estaVacia() {
         return tamaño == 0;
     }
@@ -39,101 +82,45 @@ public class ColaCircular {
     /**
      * Verifica si la cola está llena.
      * 
-     * @return true si la cola está llena, false si está vacía.
+     * @return true si la cola está llena, false en caso contrario.
      */
-    
     public boolean estaLlena() {
         return tamaño == capacidad;
     }
     
     /**
-     * Encola una nueva solicitud en la cola.
-     * Si la cola está llena, no se agrega la solicitud y muestra un mensaje de error.
+     * Obtiene el tamaño actual de la cola.
      * 
-     * @param solicitud La solicitud que se va a agregar a la cola.
+     * @return El número de elementos en la cola.
      */
-    
-    public void encolar(Solicitud solicitud) {
-        if (estaLlena()) {
-            System.out.println("La cola está llena. No se puede agregar más solicitudes.");
-            return;
-        }
-        finalCola = (finalCola + 1) % capacidad;
-        cola[finalCola] = solicitud;
-        tamaño++;
+    public int getTamaño() {
+        return tamaño;
     }
     
     /**
-     * Desencola la solicitud del frente de la cola.
-     * Si la cola está vacía, devuelve null y muestra un mensaje de error.
+     * Obtiene la capacidad máxima de la cola.
      * 
-     * @return La solicitud desencolada, o null si la cola está vacía.
+     * @return La capacidad máxima.
      */
-    
-    public Solicitud desencolar() {
-        if (estaVacia()) {
-            System.out.println("La cola está vacía.");
-            return null;
-        }
-        Solicitud solicitud = cola[frente];
-        frente = (frente + 1) % capacidad;
-        tamaño--;
-        return solicitud;
+    public int getCapacidad() {
+        return capacidad;
     }
     
     /**
-     * Obtiene todas las solicitudes actuales en la cola, en el orden en que están almacenadas.
-     * Si la cola está organizada en forma circular, la lista será recorrida en dos partes.
+     * Obtiene el array interno de solicitudes (para uso del adapter).
      * 
-     * @return Una lista de todas las solicitudes en la cola.
+     * @return El array de solicitudes.
      */
-    
-    public List<Solicitud> getSolicitudes(){
-        List<Solicitud> solicitudes = new ArrayList<>();
-        if (frente<=finalCola){
-            //Recorre la cola de frente a final
-            for (int i=frente;i<=finalCola;i++)
-                solicitudes.add(cola[i]);
-        }else{
-            //La cola está en forma circular, por lo que se recorre en dos partes
-            for (int i = frente; i < capacidad; i++) 
-                solicitudes.add(cola[i]);
-            for (int i = 0; i <= finalCola; i++) 
-                solicitudes.add(cola[i]);
-        }
+    public Solicitud[] getSolicitudes() {
         return solicitudes;
     }
     
     /**
-     * Obtiene la solicitud en el frente de la cola sin eliminarla.
-     * Si la cola está vacía, devuelve null y muestra un mensaje de error.
+     * Obtiene el índice del frente.
      * 
-     * @return La solicitud en el frente de la cola, o null si la cola está vacía.
+     * @return El índice del frente.
      */
-    
-    public Solicitud obtenerFrente() {
-        if (estaVacia()) {
-            System.out.println("La cola está vacía.");
-            return null;
-        }
-        return cola[frente];
-    }
-
-    /**
-     * Muestra las solicitudes en la cola, incluyendo el nombre del postulante y el estado de la solicitud.
-     * Si la cola está vacía, muestra un mensaje indicando que no hay solicitudes.
-     */
-    
-    public void mostrar() {
-        if (estaVacia()) {
-            System.out.println("No hay solicitudes en la cola.");
-            return;
-        }
-        System.out.println("Solicitudes en la cola:");
-        for (int i = 0; i < tamaño; i++) {
-            int index = (frente + i) % capacidad;
-            Solicitud solicitud = cola[index];
-            System.out.println(solicitud.getPostulante().getNombre() + " - Estado: " + solicitud.getEstado());
-        }
+    public int getFrente() {
+        return frente;
     }
 }

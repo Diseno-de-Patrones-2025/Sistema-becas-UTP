@@ -1,58 +1,84 @@
 package modelo;
 
+import java.util.Date;
+
 /**
- * Representa una visita realizada a un postulante en el sistema de becas.
- * Cada visita está asociada a un postulante específico y contiene detalles sobre 
- * la fecha de la visita y las observaciones realizadas durante la misma.
+ * Representa una visita en el sistema de becas.
  */
-
 public class Visita {
-    private Postulante postulante;
-    private String fecha;
-    private String observaciones;
+    private String nombreVisitante;
+    private String motivo;
+    private Date fecha;
+    private String estado;
     
     /**
-     * Constructor que genera una nueva visita para un postulante, en una fecha específica
-     * y con observaciones asociadas a la misma.
+     * Constructor para inicializar una visita.
      * 
-     * @param postulante El postulante al que se le realizó la visita.
-     * @param fecha La fecha en que se realizó la visita.
-     * @param observaciones Las observaciones realizadas durante la visita.
+     * @param nombreVisitante El nombre del visitante.
+     * @param motivo El motivo de la visita.
      */
+    public Visita(String nombreVisitante, String motivo) {
+        this.nombreVisitante = nombreVisitante;
+        this.motivo = motivo;
+        this.fecha = new Date();
+        this.estado = "Programada";
+    }
     
-    public Visita(Postulante postulante, String fecha, String observaciones) {
-        this.postulante = postulante;
+    /**
+     * Constructor completo para inicializar una visita.
+     * 
+     * @param nombreVisitante El nombre del visitante.
+     * @param motivo El motivo de la visita.
+     * @param fecha La fecha de la visita.
+     * @param estado El estado de la visita.
+     */
+    public Visita(String nombreVisitante, String motivo, Date fecha, String estado) {
+        this.nombreVisitante = nombreVisitante;
+        this.motivo = motivo;
         this.fecha = fecha;
-        this.observaciones = observaciones;
+        this.estado = estado;
     }
     
-    /**
-     * Devuelve el postulante al que se le realizó la visita.
-     * 
-     * @return El postulante al que se le realizó la visita.
-     */
-    
-    public Postulante getPostulante() {
-        return postulante;
+    // Getters y setters
+    public String getNombreVisitante() {
+        return nombreVisitante;
     }
-
-    /**
-     * Devuelve la fecha en que se realizó la visita.
-     * 
-     * @return La fecha de la visita.
-     */
     
-    public String getFecha() {
+    public void setNombreVisitante(String nombreVisitante) {
+        this.nombreVisitante = nombreVisitante;
+    }
+    
+    public String getMotivo() {
+        return motivo;
+    }
+    
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+    
+    public Date getFecha() {
         return fecha;
     }
-
-    /**
-     * Devuelve las observaciones realizadas durante la visita.
-     * 
-     * @return Las observaciones realizadas en la visita.
-     */
     
-    public String getObservaciones() {
-        return observaciones;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+    
+    public String getEstado() {
+        return estado;
+    }
+    
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+    
+    @Override
+    public String toString() {
+        return "Visita{" +
+                "nombreVisitante='" + nombreVisitante + '\'' +
+                ", motivo='" + motivo + '\'' +
+                ", fecha=" + fecha +
+                ", estado='" + estado + '\'' +
+                '}';
     }
 }

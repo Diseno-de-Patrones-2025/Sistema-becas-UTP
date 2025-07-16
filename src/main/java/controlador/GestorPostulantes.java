@@ -1,58 +1,75 @@
 package controlador;
 
+import Adapter.ABBAdapter;
+import Factory.PostulanteFactory;
 import modelo.ABB;
 import modelo.Postulante;
 
-/**
- * La clase GestorPostulantes se encarga de gestionar la información de los postulantes
- * en el sistema de becas. Permite registrar, buscar y mostrar los postulantes utilizando
- * un árbol binario de búsqueda (ABB).
- */
-
 public class GestorPostulantes {
     private ABB arbolPostulantes;
-    
-    /**
-     * Constructor que inicializa el árbol binario de búsqueda (ABB) para almacenar los postulantes.
-     */
+    private final PostulanteFactory postulanteFactory;
     
     public GestorPostulantes() {
         arbolPostulantes = new ABB();
+        postulanteFactory = new PostulanteFactory();
     }
 
-    /**
-     * Registra un nuevo postulante en el sistema, insertándolo en el árbol binario de búsqueda.
-     * 
-     * @param postulante El objeto Postulante que se desea registrar en el sistema.
-     */
-    
-    public void registrarPostulante(Postulante postulante) {
+    // Método para obtener un iterable de postulantes
+    public Iterable<Postulante> obtenerPostulantes() {
+        return new ABBAdapter(arbolPostulantes);
+    }
+
+    // Registra un nuevo postulante
+    public void registrarPostulante(String nombre, String apellido, String dni, String correo) {
+        Postulante postulante = postulanteFactory.crearPostulante(nombre, apellido, dni, correo);
         arbolPostulantes.insertar(postulante);
     }
     
-    /**
-     * Busca un postulante por su nombre en el árbol de postulantes y muestra la información
-     * si se encuentra registrado.
-     * 
-     * @param nombre El nombre del postulante a buscar en el sistema.
-     */
+    // Muestra todos los postulantes registrados
+    public void mostrarPostulantes() {
+        System.out.println("Postulantes registrados (en orden alfabético):");
+        for (Postulante p : obtenerPostulantes()) {
+            System.out.println(p.getNombre() + " " + p.getApellido() + " - Puntaje: " + p.getPuntaje());
+        }
+    }
     
+    // Busca un postulante por nombre
     public void buscarPostulante(String nombre) {
         Postulante postulante = arbolPostulantes.buscar(nombre);
         if (postulante != null) {
-            System.out.println("Postulante encontrado: " + postulante.getNombre() + " " + postulante.getApellido());
+            System.out.println("Postulante encontrado:");
+            System.out.println("Nombre: " + postulante.getNombre());
+            System.out.println("Apellido: " + postulante.getApellido());
+            System.out.println("DNI: " + postulante.getDni());
+            System.out.println("Correo: " + postulante.getCorreo());
+            System.out.println("Puntaje: " + postulante.getPuntaje());
         } else {
             System.out.println("Postulante no encontrado.");
         }
     }
+
+    // Verifica si existe un postulante por nombre
+    public boolean existePostulante(String nombre) {
+        return arbolPostulantes.buscar(nombre) != null;
+    }
+
+    // Asigna puntaje a un postulante existente
+    public boolean asignarPuntaje(String nombre, double puntaje) {
+        Postulante postulante = arbolPostulantes.buscar(nombre);
+        if (postulante != null) {
+            postulante.setPuntaje(puntaje);
+            return true;
+        }
+        return false;
+    }
     
     /**
-     * Muestra todos los postulantes registrados en el sistema, ordenados alfabéticamente
-     * según su nombre, utilizando el recorrido InOrden del árbol binario de búsqueda.
+     * Obtiene el árbol binario de búsqueda que contiene los postulantes.
+     * Método agregado para soporte del GeneradorReportes.
+     * 
+     * @return El ABB con todos los postulantes registrados
      */
-
-    public void mostrarPostulantes() {
-        System.out.println("Postulantes registrados (en orden alfabético):");
-        arbolPostulantes.mostrarInOrden();
+    public ABB getAbb() {
+        return arbolPostulantes;
     }
 }
